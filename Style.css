@@ -1,0 +1,305 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: #ece7e2;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #ece7e2;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #5a623a;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #5a623a;
+      font-size: 16px;
+    }
+
+    .inicio {
+      margin-top: 80px;
+      background: #ece7e2;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      
+    }
+
+    .inicio h2 {
+      font-size: 48px;
+      background-color:#5a623a;
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 32px;
+        padding: 15px;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    .ss {
+  background-color: #eee8e1;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.ss-container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 0 40px;
+}
+
+.ss-img img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.ss-txt h2 {
+  font-family: 'Georgia', serif;
+  font-size: 48px;
+  color: #716f40;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.ss-txt p {
+  font-family: 'Arial', sans-serif;
+  color: #543f30;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.ss-text button {
+  background-color: #543f30;
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ss-text button:hover {
+  background-color: #6d5544;
+}
+
+.services {
+  background-color: #eee8e1;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.services-title {
+  font-family: 'Georgia', serif;
+  font-size: 48px;
+  color: #716f40;
+  margin-bottom: 50px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.service-card {
+  background-color: transparent;
+  max-width: 320px;
+  text-align: left;
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-family: 'Georgia', serif;
+  color: #543f30;
+  font-size: 20px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #543f30;
+  display: inline-block;
+}
+
+.service-card .preco {
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #543f30;
+}
+
+.service-card p {
+  font-family: 'Arial', sans-serif;
+  color: #543f30;
+  line-height: 1.6;
+}
+
+.contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 40px;
+  background-color: #f5f0ea;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.contato-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contato-texto h2 {
+  font-size: 56px;
+  font-family: 'Georgia', serif;
+  color: #6b682c;
+  margin-bottom: 20px;
+}
+
+.contato-texto p {
+  font-size: 16px;
+  color: #3f2b20;
+  max-width: 450px;
+  line-height: 1.6;
+}
+
+.contato-formulario {
+  flex: 2;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contato-formulario label {
+  color: #4c321f;
+  font-weight: 500;
+}
+
+.contato-formulario span {
+  font-size: 12px;
+  color: #a4886b;
+}
+
+.nome-duplo {
+  display: flex;
+  gap: 10px;
+}
+
+.nome-duplo input {
+  flex: 1;
+}
+
+.contato-formulario input,
+.contato-formulario textarea {
+  padding: 12px 18px;
+  border: 1px solid #4c321f;
+  border-radius: 30px;
+  font-size: 15px;
+  font-family: inherit;
+  background-color: #fdfaf7;
+  color: #3f2b20;
+}
+
+.contato-formulario textarea {
+  height: 100px;
+  border-radius: 20px;
+  resize: vertical;
+}
+
+.contato-formulario button {
+  margin-top: 10px;
+  background-color: #4c2d0e;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.contato-formulario button:hover {
+  background-color: #3a220a;
+}
+
+
+
+
+#tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 15px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.carta {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  position: relative;
+  perspective: 1000px;
+}
+
+.carta img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.frente {
+  transform: rotateY(180deg);
+}
+
+.virada .frente {
+  transform: rotateY(0deg);
+}
+
+.virada .verso {
+  transform: rotateY(180deg);
+}
